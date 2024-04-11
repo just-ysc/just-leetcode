@@ -12,8 +12,7 @@ class Solution {
                 pathStack.push(p);
             }
         }
-        ArrayList<String> simplifiedPaths = new ArrayList(pathStack);
         
-        return "/" + String.join("/", simplifiedPaths);
+        return "/" + String.join("/", new ArrayList(pathStack));
     }
 }
